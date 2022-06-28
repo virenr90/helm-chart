@@ -1,0 +1,22 @@
+{{- range .Values.environments }}
+{{- $environment := . }}
+
+{{- range $.Values.applications }}
+{{- $application := . }}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ $environment.name }}-{{ $application.name }}
+  annotations:
+    configsync.gke.io/cluster-name-selector: {{ index $application "cluster-name-prefix" }}-{{ $environment.environment }}
+  labels:
+    {{- range $key, $val := $environment.labels }}
+    {{ $key }}: {{ $val | quote }}
+    {{- end}}
+    {{- range $key, $val := $application.labels }}
+    {{ $key }}: {{ $val | quote }}
+    {{- end}}
+
+{{ end }}
+{{ end }}

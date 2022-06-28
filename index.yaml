@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  namespace-helm-template:
+  - apiVersion: v2
+    created: "2022-06-28T12:44:03.132808324+05:30"
+    description: A Helm chart for Kubernetes namespaces
+    digest: 21536126996fb6c359b8995e7c0a5245349123d434733aefe8c070e67d6f373e
+    name: namespace-helm-template
+    type: application
+    urls:
+    - https://github.com/virenr90/helm-chart/namespace-helm-template-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-28T12:44:03.132290047+05:30"
