@@ -1,13 +1,40 @@
 apiVersion: v1
 entries:
+  cert-manager:
+  - annotations:
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v1
+    appVersion: v1.8.2
+    created: "2022-07-08T12:21:40.44188911+05:30"
+    description: A Helm chart for cert-manager
+    digest: 3e3262f08455d02f025e803b8227dea3ff3f88c170bfb0655b513fa274de5592
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - cert-manager-v1.8.2.tgz
+    version: v1.8.2
   namespace-helm-template:
   - apiVersion: v2
-    created: "2022-06-28T15:58:41.566862282+05:30"
+    created: "2022-07-08T12:21:40.442350413+05:30"
     description: A Helm chart for Kubernetes namespaces
     digest: 21536126996fb6c359b8995e7c0a5245349123d434733aefe8c070e67d6f373e
     name: namespace-helm-template
     type: application
     urls:
-    - https://virenr90.github.io/helmchart/namespace-helm-template-0.1.0.tgz
+    - namespace-helm-template-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-28T15:58:41.565865262+05:30"
+generated: "2022-07-08T12:21:40.42735416+05:30"
