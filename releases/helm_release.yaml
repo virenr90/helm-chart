@@ -14,7 +14,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: vk-release
+  name: vk-release-auto
   namespace: default
 spec:
   chart:
