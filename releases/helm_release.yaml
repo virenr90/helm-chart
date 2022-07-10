@@ -1,0 +1,25 @@
+# # apiVersion: helm.fluxcd.io/v1
+# # kind: HelmRelease
+# # metadata:
+# #   name: awesome-example
+# # spec:
+# #   chart:
+# #     repository: https://github.com/virenr90/vk-helm-op
+# #     # version: 1.0.0
+# #     name: namespace-helm-template
+# #     branch: main
+
+
+
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: vk-release
+  namespace: default
+spec:
+  chart:
+    repository: https://virenr90.github.io/helmchart/
+    name: namespace-helm-template
+    version: v0.1.0
+    #name: cert-manager
+    #version: v1.8.2
