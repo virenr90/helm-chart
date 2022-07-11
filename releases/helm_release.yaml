@@ -11,8 +11,8 @@
 
 
 
-# apiVersion: helm.fluxcd.io/v1
-apiVersion: helm.fluxcd.io/v2
+apiVersion: helm.fluxcd.io/v1
+#apiVersion: helm.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: vk-release-auto
