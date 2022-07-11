@@ -2,5 +2,5 @@
 # namespace: dev
 
 resources:
-- overlay
+# - overlay
 
