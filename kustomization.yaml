@@ -1,6 +1,0 @@
-# ./dev/kustomization.yaml
-# namespace: dev
-
-resources:
-# - overlay
-
