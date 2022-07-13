@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../base
-  - serviceaccount.yaml
+  # - serviceaccount.yaml
 
 
 
@@ -17,3 +17,15 @@ patches:
     - op: replace
       path: /metadata/labels/owner
       value: GCP-Team-Dev
+
+- target:
+    kind: ServiceAccount
+    # name: k8s-external-dns
+  patch: |-
+    - op: add
+      path: /metadata/name
+      value: k8s-external-dns
+    - op: add
+      path: /metadata/namespace
+      value: default
+
