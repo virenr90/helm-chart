@@ -1,6 +1,6 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: dev-ns
+  name: build-ns
   labels:
     owner: dev-admin

@@ -7,16 +7,16 @@ resources:
 
 
 patches:
-# - target:
-#     kind: Namespace
-#     # name: build-robot
-#   patch: |-
-#     - op: replace
-#       path: /metadata/name
-#       value: vk-ns
-#     - op: replace
-#       path: /metadata/labels/owner
-#       value: GCP-Team-Dev
+- target:
+    kind: Namespace
+    name: build-ns
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: vk-ns
+    - op: replace
+      path: /metadata/labels/owner
+      value: GCP-Team-Dev
 
 - target:
     kind: ServiceAccount
