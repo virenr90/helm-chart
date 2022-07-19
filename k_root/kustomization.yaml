@@ -4,3 +4,8 @@ resources:
   - overlay
 
 
+# ./kustomization.yaml
+helmCharts:
+- name: namespace-helm-template
+  releaseName: namespace-release
+  namespace: default

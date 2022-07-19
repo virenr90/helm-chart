@@ -4,16 +4,16 @@ resources:
   - ../base
 
 patches:
-- target:
-    kind: Namespace
-    name: build-ns
-  patch: |-
-    - op: add
-      path: /metadata/name
-      value: vk-ns
-    - op: add
-      path: /metadata/labels/owner
-      value: GCP-Team-Dev
+# - target:
+#     kind: Namespace
+#     name: build-ns
+#   patch: |-
+#     - op: add
+#       path: /metadata/name
+#       value: vk-ns
+#     - op: add
+#       path: /metadata/labels/owner
+#       value: GCP-Team-Dev
 - target:
     kind: ServiceAccount
     # name: k8s-external-dns
