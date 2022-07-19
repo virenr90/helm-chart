@@ -6,6 +6,6 @@ resources:
 
 # ./kustomization.yaml
 helmCharts:
-- name: ./charts/namespace-helm-template
+- name: namespace-helm-template
   releaseName: namespace-release
   namespace: default
